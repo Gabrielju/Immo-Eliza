@@ -156,9 +156,10 @@ $result_decode = json_decode($result_JSON, true);
 //echo $result_decode['estimated_price'];
 
 curl_close($ch);
-                $fmt = new NumberFormatter( 'de_DE', NumberFormatter::CURRENCY );
-                echo $fmt->formatCurrency($result_decode['estimated_price'], "EUR");
+                /*$fmt = new NumberFormatter( 'de_DE', NumberFormatter::CURRENCY );
+                echo $fmt->formatCurrency($result_decode['estimated_price'], "EUR");*/
                 //echo $fmt-> $result_decode['estimated_price'];
+                echo ($result_decode['estimated_price']);
 };
                 ?>
             </div>
